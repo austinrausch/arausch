@@ -30,7 +30,7 @@ export class ResumeComponent implements OnInit {
   downloadResume() {
     var oReq = new XMLHttpRequest();
     // The Endpoint of your server
-    var URLToPDF = "./../../assets/files/Austin Rausch Resume 10_18_19.pdf";
+    var URLToPDF = "./../../assets/files/Austin Rausch Resume 10_21_19.pdf";
 
     // Configure XMLHttpRequest
     oReq.open("GET", URLToPDF, true);
