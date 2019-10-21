@@ -1,3 +1,7 @@
+# Welcome
+
+This standard angular details are preserved below for this project. I built this using Angular 8 with Material Design elements. I am using NGRX/Redux for state management (mostly for styling purposes) and Flex Layout for the layout on each page. Feel free to clone and inspect or run. Please contact me for any questions or feedback!
+
 # Arausch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
