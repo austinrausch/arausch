@@ -1,0 +1,20 @@
+<div fxLayout="column">
+    <div @fade1 fxLayoutAlign="start end" class="top" [class.mat-elevation-z5]="true">
+        <div fxFlex="80%" class="container">
+            <p>
+                Recently, I have been working as a senior level software engineer designing and building custom web solutions with an emphasis on data collection, 
+                display, and analytics. I specialize in UI/UX and have significant experience with front-end applications, especially Single Page Applications (SPAs) 
+                and SPA design patterns. Please feel free to download my full resume below and check it out!
+            </p>    
+        </div>
+    </div>
+            
+    <div @fade2 class="download" fxFlex="40%" fxLayout="column" fxLayoutAlign="space-around center">
+        <button mat-raised-button (click)="downloadResume()">
+            <p class="resume">
+                Click here to download my full resume!
+            </p>
+        </button>
+        <h2 class="resume">This site was created using Angular 8 and is hosted on AWS S3/Cloudfront. You can check out the code on GitHub!</h2>
+    </div>            
+</div>

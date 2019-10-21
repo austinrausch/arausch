@@ -1,0 +1,79 @@
+@import './../styles.scss';
+
+// .sidenav-container {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+// }
+
+mat-sidenav-content {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+  
+.logo-font {
+  font-family: 'Comfortaa';
+  color: mat-color($virtuosa-theme-accent);
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.header {
+  background-color: mat-color($virtuosa-theme-grey);
+}
+
+.nav-button {
+  height: 100%;
+}
+
+a:hover {
+  color: mat-color($virtuosa-theme-accent);
+}
+
+.sidenav-button {
+  height: 140px;
+  width: 140px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-size: cover;
+}
+
+.sidenav-button:hover {
+  cursor: pointer;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+p {
+  font-family: 'Comfortaa';
+}
+
+div > p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+.solo {
+  background-image: url('./../assets/images/austin-solo.png');
+  background-position: center top;
+}
+
+.parade {
+  background-image: url('./../assets/images/austin-parade.jpg');
+  background-position: left bottom;
+}
+
+.resume {
+  background-image: url('./../assets/images/resume.PNG');
+  background-position: left center;
+}

@@ -1,0 +1,26 @@
+<div class="container" fxLayout="column">
+    <div @fade1 fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-around start" class="top" [class.mat-elevation-z5]="true">
+        <p fxFlex="80%">
+            I very much enjoy spending time with my friends and family. I travel as often as possible and get to as many sports games as I can in between trips. 
+            I love the outdoors, taking the opportunity to play golf as often as possible and climbing the occasional mountain.
+        </p>
+    </div>
+    <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center" class="container-color">
+        <div fxFlex="50%" fxLayout="column" fxLayoutAlign="center center" class="bottom">
+            <p @fade2>
+                Since a young age, I've been passionate about listening to and playing music. I've been playing trombone and euphonium for nearly 
+                twenty years and continue to play in community groups or special events when I have the opportunity. I am a former high school band 
+                director, have a Bachelor's degree in music education, and occasionally work as a private teacher.
+            </p>
+            <p @fade3>
+                My primary interest in recent years has been gaining proficiency in development skills and putting them into practice at work and on 
+                personal projects. I am particularly interested in web solutions and frameworks. I believe the internet is a powerful tool that has and 
+                will continue to change the world in positive ways. 
+            </p>        
+        </div>
+        <!--fxFlex doesn't play nice with background-size: cover in column layout. Not sure why. Using separate images works-->
+        <div @fade4 fxHide.lt-md fxFlex="35%" fxLayoutAlign="center center" class="bottom-image" [class.mat-elevation-z5]="true"></div>
+        <div @fade4 fxHide.gt-sm fxHide.lt-sm fxLayoutAlign="center center" class="bottom-image md nellie" [class.mat-elevation-z5]="true"></div>
+        <div @fade4 fxHide.gt-xs fxLayoutAlign="center center" class="bottom-image sm nellie" [class.mat-elevation-z5]="true"></div>
+    </div>
+</div>

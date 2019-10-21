@@ -1,0 +1,49 @@
+@import './../../styles.scss';
+
+* {
+    font-family: Comfortaa;
+}
+
+p {
+    font-size: 14pt;   
+}
+
+.container-color {
+    background-color: mat-color($virtuosa-theme-primary, lighter);
+}
+
+.image-container {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.image-container-md {
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.image-container-small {
+    width: 80%;
+    height: 300px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.fish {
+    background-image: url('./../../assets/images/austin-fish.jpg');
+    background-position: center top;
+}
+
+.blanca {
+    background-image: url('./../../assets/images/austin-blanca.jpg');
+    background-position: left bottom;
+}
+
+.nellie {
+    background-image: url('./../../assets/images/austin-nellie-sd.jpg');
+    background-position: left center;
+}

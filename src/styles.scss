@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import './theme';
+
+.accent-lighter {
+    background-color: mat-color($virtuosa-theme-accent, lighter);
+}
+.accent-darker {
+    background-color: mat-color($virtuosa-theme-accent, darker);
+}
+.primary-lighter {
+    background-color: mat-color($virtuosa-theme-primary, lighter);
+}
+.primary-darker {
+    background-color: mat-color($virtuosa-theme-primary, darker);
+}
+.grey {
+    background-color: mat-color($virtuosa-theme-grey);
+}
+.red {
+    background-color: mat-color($virtuosa-theme-red);
+}
+.warn {
+    background-color: mat-color($virtuosa-theme-red);
+}

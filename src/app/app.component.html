@@ -1,0 +1,43 @@
+<!--header toolbar-->
+<mat-toolbar fxLayout="row" class="header" fxLayoutAlign="start center" fxLayoutGap="20px">
+  <p fxHide.lt-sm class="logo-font">Austin Rausch</p>
+  <p fxHide.gt-xs *ngIf="isMobileWidth || isMobileDevice" class="logo-font">AR</p>
+  <span fxFlex></span>
+  <a mat-button *ngIf="!isMobileWidth && !isMobileDevice" class="nav-button" [routerLink]="[ '/about' ]">
+    <p>About Me</p>
+  </a>
+  <a mat-button *ngIf="!isMobileWidth && !isMobileDevice" class="nav-button" [routerLink]="[ '/interests' ]">
+    <p>My Interests</p>
+  </a>
+  <a mat-button *ngIf="!isMobileWidth && !isMobileDevice" class="nav-button" [routerLink]="[ '/resume' ]">
+    <p>My Resume</p>
+  </a>
+  <button mat-fab *ngIf="isMobileWidth || isMobileDevice" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+    <mat-icon *ngIf="sidenav.opened">menu_open</mat-icon>
+  </button>
+</mat-toolbar>
+
+<!--sidenav container (entire page between header and footer)-->
+<mat-sidenav-container class="sidenav-container" (window:resize)="onResize($event)" (backdropClick)="close()">
+
+  <!--content in the opened sidenav-->
+  <mat-sidenav #sidenav (keydown.escape)="close()" disableClose position="end">
+    <div class="sidenav-container" fxLayout="column" fxLayoutAlign="start start">
+        <p [routerLink]="[ '/about' ]" (click)="close()">About Me</p>
+        <div matRipple [class.mat-elevation-z5]="true" (click)="close()" class="sidenav-button solo" [routerLink]="[ '/about' ]">
+        </div>
+        <p [routerLink]="[ '/interests' ]" (click)="close()">Interests</p>
+        <div matRipple [class.mat-elevation-z5]="true" (click)="close()" class="sidenav-button parade" [routerLink]="[ '/interests' ]">
+        </div>
+        <p [routerLink]="[ '/resume' ]" (click)="close()">Resume</p>
+        <div matRipple [class.mat-elevation-z5]="true" (click)="close()" class="sidenav-button resume" [routerLink]="[ '/resume' ]">
+        </div>
+    </div>
+  </mat-sidenav>
+
+  <!--page content-->
+  <mat-sidenav-content fullscreen>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
