@@ -1,18 +1,38 @@
 <div fxLayout="column">
-    <div @fade1 fxLayoutAlign="start end" class="top" [class.mat-elevation-z5]="true"></div>
-    <p @fade1>
-        Recently, I have been working as a senior level software engineer designing and building custom web solutions with an emphasis on data collection, 
-        display, and analytics. I specialize in UI/UX and have significant experience with front-end applications, especially Single Page Applications (SPAs) 
-        and SPA design patterns. Please feel free to download my full resume below and check it out!
-    </p>    
+  <div
+    fade1
+    fxLayoutAlign="start end"
+    class="top"
+    [class.mat-elevation-z5]="true"
+  ></div>
+  <p fxFlex="80%" fade1>
+    Recently, I have been working as a senior level software engineer designing
+    and building custom web solutions with an emphasis on travel, payments, and
+    data analytics. I specialize in UI/UX and have significant experience
+    developing front-end applications, especially Single Page Applications
+    (SPAs) and SPA design patterns. I am currently working as a senior
+    development contractor specializing in the Angular framework. Please feel
+    free to download my full resume below and check it out!
+  </p>
 
-    <div @fade2 class="download" fxFlex="40%" fxLayout="column" fxLayoutAlign="space-around center">
-        <button mat-raised-button (click)="downloadResume()">
-            <p class="resume">
-                Click here to download my full resume!
-            </p>
-        </button>
-        <h2 class="resume">This site was created using Angular 8 and is hosted on AWS S3/Cloudfront.</h2>
-        <p>Check out the code on <a target="_blank" href="https://github.com/arauschtech/arausch" >GitHub!</a></p>
-    </div>            
+  <div
+    fade2
+    class="download"
+    fxFlex="40%"
+    fxLayout="column"
+    fxLayoutAlign="space-around center"
+  >
+    <button mat-raised-button (click)="downloadResume()">
+      <p class="resume">Click here to download my full resume!</p>
+    </button>
+    <h2 class="resume">
+      This site was created using Angular 9 and is hosted on AWS S3/Cloudfront.
+    </h2>
+    <p>
+      Check out the code on
+      <a target="_blank" href="https://github.com/arauschtech/arausch"
+        >GitHub!</a
+      >
+    </p>
+  </div>
 </div>

@@ -10,7 +10,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { MobileEffects } from './store/effects/mobile.effects';
 import { environment } from 'src/environments/environment.prod';
 import { StoreModule } from '@ngrx/store';
-import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { StoreRouterConnectingModule, DefaultRouterStateSerializer } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AboutComponent } from './about/about.component';
 import { InterestsComponent } from './interests/interests.component';
@@ -31,7 +31,7 @@ import { ResumeComponent } from './resume/resume.component';
     FlexLayoutModule,
     StoreModule.forRoot(appReducers),
     EffectsModule.forRoot([MobileEffects]),
-    StoreRouterConnectingModule.forRoot({ stateKey: 'router'}),
+    StoreRouterConnectingModule.forRoot({ serializer: DefaultRouterStateSerializer, stateKey: 'router'}),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production

@@ -1,25 +1,27 @@
 .top {
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center center;
-    background-image: url('./../../assets/images/austin-nellie-fancy.jpg');
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./../../assets/images/austin-nellie-fancy.jpg");
 }
 
 p {
-    font-family: 'Comfortaa';
-    font-size: 20pt;
+  font-family: "Roboto";
+  font-size: 20pt;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .resume {
-    font-family: 'Comfortaa';
-    font-size: 12pt;
+  font-family: "Roboto";
+  font-size: 12pt;
 }
 
 .container {
-    background:rgb(0, 0, 0, .6);
+  background: rgb(0, 0, 0, 0.6);
 }
 
 .download {
-    margin: 50px;
+  margin: 50px;
 }

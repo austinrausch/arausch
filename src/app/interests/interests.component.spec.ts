@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InterestsComponent } from './interests.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('InterestsComponent', () => {
   let component: InterestsComponent;
@@ -9,9 +8,6 @@ describe('InterestsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        BrowserAnimationsModule,
-      ],
       declarations: [ InterestsComponent ]
     })
     .compileComponents();

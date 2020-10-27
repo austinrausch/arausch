@@ -1,36 +1,111 @@
 <div class="container" fxLayout="column">
-    <div @fade1 fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center" class="container-color">
-        <div fxFlex="50%" fxLayout="column" fxLayoutAlign="center center">
-            <h1>Welcome!</h1>
-            <p>
-                I'm Austin, a Software Engineer, Musician, and Educator living in the Orlando, FL area. At an early age I became interested in technology and the internet. As I grew,
-                I gained a passion for teaching and creating music. 
-            </p>
-        </div>
-        <!--fxFlex doesn't play nice with background-size: cover in column layout. Not sure why. Using separate images works-->
-        <div fxHide.lt-md fxFlex="35%" fxLayoutAlign="center center" class="image-container fish" [class.mat-elevation-z5]="true"></div>
-        <div fxHide.gt-sm fxHide.lt-sm fxLayoutAlign="center center" class="image-container-md fish" [class.mat-elevation-z5]="true"></div>
-        <div fxHide.gt-xs fxLayoutAlign="center center" class="image-container-small fish" [class.mat-elevation-z5]="true"></div>
+  <div
+    fade1
+    fxLayout.gt-sm="row"
+    fxLayout.lt-md="column"
+    fxLayoutAlign="space-around center"
+    class="container-color"
+  >
+    <div
+      fxFlex.gt-sm="50%"
+      fxFlex.lt-md="80%"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <h1>Welcome!</h1>
+      <p>
+        I'm Austin, a Software Engineer, Musician, and Educator living in
+        Orlando, FL.
+      </p>
     </div>
-    <div @fade2 fxLayout.gt-sm="row" fxLayout.lt-md="column" [ngClass]="{'container-color': isMobileWidth || isMobileDevice}" fxLayoutAlign="space-around center" >
-        <div fxHide.lt-md fxFlex="35%" fxLayoutAlign="center center" class="image-container blanca" [class.mat-elevation-z5]="true"></div>
-        <div fxFlex="50%" fxLayout="column" fxLayoutAlign="center center">
-            <p>
-                I'm an avid Kansas City and University of Missouri sports fan. I love hiking, golfing, traveling, and cooking as often as I am able.
-            </p>
-        </div>    
+    <!--fxFlex doesn't play nice with background-size: cover in column layout. Not sure why. Using separate images works-->
+    <div
+      fxHide.lt-md
+      fxFlex="35%"
+      fxLayoutAlign="center center"
+      class="image-container fish"
+      [class.mat-elevation-z5]="true"
+    ></div>
+    <div
+      fxHide.gt-sm
+      fxHide.lt-sm
+      fxLayoutAlign="center center"
+      class="image-container-md fish"
+      [class.mat-elevation-z5]="true"
+    ></div>
+    <div
+      fxHide.gt-xs
+      fxLayoutAlign="center center"
+      class="image-container-small fish"
+      [class.mat-elevation-z5]="true"
+    ></div>
+  </div>
+  <div
+    fade2
+    fxLayout.gt-sm="row"
+    fxLayout.lt-md="column"
+    [ngClass]="{ 'container-color': isMobileWidth || isMobileDevice }"
+    fxLayoutAlign="space-around center"
+  >
+    <div
+      fxHide.lt-md
+      fxFlex="35%"
+      fxLayoutAlign="center center"
+      class="image-container blanca"
+      [class.mat-elevation-z5]="true"
+    ></div>
+    <div
+      fxFlex.gt-sm="50%"
+      fxFlex.lt-md="80%"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <p>
+        I'm an avid Kansas City and University of Missouri sports fan. I love
+        hiking, golfing, traveling, and cooking as often as I am able.
+      </p>
     </div>
-    <div @fade3 fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center" class="container-color">
-        <div fxFlex="50%" fxLayout="column" fxLayoutAlign="center center">
-            <p>
-                I recently moved to the Orlando area with my wonderful girlfriend, Nellie, and our two cats, Dipper and Spaghetti. We spend our time together traveling 
-                (nine destinations this year so far!), going to theme parks, trying as much new food and drink as we can, 
-                and watching our favorite TV shows and movies over and over again.
-            </p>
-        </div>
-        <!--fxFlex doesn't play nice with background-size: cover in column layout. Not sure why. Using separate images works-->
-        <div fxHide.lt-md fxFlex="35%" fxLayoutAlign="center center" class="image-container nellie" [class.mat-elevation-z5]="true"></div>
-        <div fxHide.gt-sm fxHide.lt-sm fxLayoutAlign="center center" class="image-container-md nellie" [class.mat-elevation-z5]="true"></div>
-        <div fxHide.gt-xs fxLayoutAlign="center center" class="image-container-small nellie" [class.mat-elevation-z5]="true"></div>
+  </div>
+  <div
+    fade3
+    fxLayout.gt-sm="row"
+    fxLayout.lt-md="column"
+    fxLayoutAlign="space-around center"
+    class="container-color"
+  >
+    <div
+      fxFlex.gt-sm="50%"
+      fxFlex.lt-md="80%"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <p>
+        I recently moved to the Orlando area with my wonderful girlfriend,
+        Nellie, and our two cats, Dipper and Spaghetti. We spend our time
+        together traveling, going to theme parks, trying as much new food as we
+        can, and watching our favorite TV shows and movies over and over again.
+      </p>
     </div>
+    <!--fxFlex doesn't play nice with background-size: cover in column layout. Not sure why. Using separate images works-->
+    <div
+      fxHide.lt-md
+      fxFlex="35%"
+      fxLayoutAlign="center center"
+      class="image-container nellie"
+      [class.mat-elevation-z5]="true"
+    ></div>
+    <div
+      fxHide.gt-sm
+      fxHide.lt-sm
+      fxLayoutAlign="center center"
+      class="image-container-md nellie"
+      [class.mat-elevation-z5]="true"
+    ></div>
+    <div
+      fxHide.gt-xs
+      fxLayoutAlign="center center"
+      class="image-container-small nellie"
+      [class.mat-elevation-z5]="true"
+    ></div>
+  </div>
 </div>

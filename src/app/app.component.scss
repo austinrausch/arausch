@@ -1,4 +1,4 @@
-@import './../styles.scss';
+@import "./../styles.scss";
 
 // .sidenav-container {
 //     position: absolute;
@@ -12,9 +12,9 @@ mat-sidenav-content {
   height: auto;
   margin: 0;
 }
-  
+
 .logo-font {
-  font-family: 'Comfortaa';
+  font-family: "Comfortaa";
   color: mat-color($virtuosa-theme-accent);
   font-size: 50px;
   cursor: pointer;
@@ -51,7 +51,7 @@ a:hover {
 }
 
 p {
-  font-family: 'Comfortaa';
+  font-family: "Roboto";
 }
 
 div > p {
@@ -64,16 +64,16 @@ p:hover {
 }
 
 .solo {
-  background-image: url('./../assets/images/austin-solo.png');
+  background-image: url("./../assets/images/austin-solo.png");
   background-position: center top;
 }
 
 .parade {
-  background-image: url('./../assets/images/austin-parade.jpg');
+  background-image: url("./../assets/images/austin-parade.jpg");
   background-position: left bottom;
 }
 
 .resume {
-  background-image: url('./../assets/images/resume.PNG');
+  background-image: url("./../assets/images/resume.PNG");
   background-position: left center;
 }
